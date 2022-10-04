@@ -1,0 +1,1135 @@
+/* ======== style general==============*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ /* =========== nav menu================  */
+ .nav-bottom{
+     box-shadow: 1px 1px 4px 0 rgba(0,0 ,0, .1);
+     width: 100%;
+     overflow: hidden;
+     z-index: 5;
+     height:auto;
+     background-color: #000000;
+
+ }
+ /* =========style infos ========================*/
+ .infosLan{
+     display:flex;
+     width: auto;
+ }
+ .m-mobile{
+     display: none;
+
+ }
+ .mc-grand{
+     display: none;
+ }
+ .a-infos{
+     color: white;
+ }
+
+ .log{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+ }
+ .mg-ecran{
+     margin: 10px;
+ }
+  .sh{
+     list-style: none;
+    border: 1px solid rgb(82, 82, 241);
+     margin-right:10px ;
+     
+ }
+ .sh >a{
+     text-decoration: none;
+     color: white;
+}
+ .recherch{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     flex-basis: calc(50% - 40px);
+   align-items: center;
+   padding: 0;
+   margin: 0;
+
+ }
+ .recherch >input{
+     display: flex;
+     flex-direction: row;
+     min-width: 50%;
+     flex-basis: calc(100% - 40px);
+ padding: 0;
+ margin: 0;
+ z-index: 8;
+ margin-left: 20px;
+ height: 30px;
+ }
+ .btnR{
+     height: 35px;
+     background-color: rgb(59, 55, 248);
+     z-index: 8;
+ }
+
+ /*  ==========Fin style info==========================*/
+ #logoVelo{
+     margin-left: 10px;
+     margin-top: 10px;
+     z-index: 8;
+ }
+  /* .text-gray{
+      display: none;
+ } */
+
+ .nav-bottom #menu-2{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     overflow: hidden;
+     background-color:#000000;
+     margin-top:0;
+
+
+ }
+ .nav-bottom #menu-2 a{
+     display: block;
+     padding: 20px;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 12px;
+     border-bottom:1px solid red ;
+     color: white;
+ }
+ .nav-bottom #menu-2 a:hover{
+     border-bottom: 5px solid blue;
+     display: block;
+     text-decoration: none;
+ }
+
+ /* ======logo=========*/
+ /* #nav .logo{
+     position: absolute;
+     left:0;
+     display: block;
+     font-size: 2em;
+     padding: 10px 20px;
+
+ } */
+ .nav-bottom #menu-2{
+     clear: both;
+     max-height: 0;
+     transition: max-height .2s ease-out;
+ }
+ .nav-bottom .menu-icon{
+       height: 2px;
+      padding :20px 20px;
+      margin-top: 40px;
+     position: relative;
+     float: right;
+     cursor: pointer;
+
+ }
+ .nav-bottom  .menu-icon .navicon{
+    background-color: rgb(246, 246, 250);
+    display: block;
+    height: 3px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+
+ }
+ .nav-bottom  .menu-icon .navicon:before{
+  background-color:rgb(246, 246, 250);
+  content: "";
+  display: block;
+  height: 100%;
+  width:100% ;
+  position: absolute;
+  top :5px;
+  transition: all .2s ease-out;
+ }
+ .nav-bottom  .menu-icon .navicon:after{
+     background-color: rgb(246, 246, 250);
+     content: "";
+     display: block;
+     height: 100%;
+     width:100% ;
+     position: absolute;
+     transition: all .2s ease-out;
+     top :-5px;
+    }
+
+ /*============ click checbox burger menu =====================*/
+ .nav-bottom  .menu-btn{
+     display:none;
+ }
+ .nav-bottom .menu-btn:checked ~ #menu-2 {
+     max-height: 600px;
+
+ }
+ .nav-bottom .menu-btn:checked ~ .menu-icon .navicon{
+     background: transparent;
+ }
+ .nav-bottom .menu-btn:checked ~ .menu-icon .navicon:before{
+     transform: rotate(-45deg);
+     top:0;
+ }
+ .nav-bottom .menu-btn:checked ~ .menu-icon .navicon:after{
+     transform: rotate(45deg);
+     top: 0;
+ }
+ /*================style accueil =================== */
+ .conteneur-principale{
+     flex-basis: calc( 100% -20px) ;
+     flex-shrink: 0;
+ }
+ .conteneur,.contentVelos{
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: 20px;
+     margin-right: 20px;
+     /* background-color: rgb(24, 31, 133); */
+     justify-content: center;
+ }
+
+ /*================ FIN style accueil =================== */
+ /*==============Style edit velo=================*/
+ #map-canvas{
+     width: calc(100% - 40px);
+ }
+ #close{
+
+     min-width: 100%;
+ }
+ .editForm{
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(223, 215, 215, 0.397);
+     width: 100%;
+ }
+ .editForm >div{
+     align-self: center;
+     width: 50%;
+ }
+ #close div{
+     padding: 20px;
+     /* background-color: rgb(12, 175, 180); */
+     align-self: center;
+ }
+ .titreLogE{
+     background-color: rgba(195, 205, 240, 0.507);
+     height: 40px;
+     padding-top: 10px;
+     margin-bottom: 10px;
+     text-transform: uppercase;
+     width: 100%;
+ }
+ /*============== FIN Style edit velo=================*/
+ /*================style contact =================== */
+ .enregistrement-contenu {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex-grow: 1;
+     flex-basis: 100%;
+     background-color: rgba(217, 214, 218, 0.301);
+
+ }
+ .enregistrement-contenu h2{
+     text-align: center;
+     align-self: center;
+ }
+
+ .contactInfo{
+     min-width: calc(40% - 20px) ;
+     margin: 5px;
+ }
+ .formBx{
+     min-width: calc(60% - 20px) ;
+     margin: 5px;
+
+ }
+ .formBx form{
+     display: flex;
+     flex-direction: column;
+
+
+ }
+ .content{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     /* flex-wrap: wrap; */
+
+ }
+ .msg{
+     color: rgb(197, 87, 13);
+ }
+ .formBx form h3{
+     font-size: 20px;
+     font-weight: 500;
+     margin-bottom: 20px;
+     color: gray;
+ }
+ .formBx form input{
+     min-height: 40px;
+     max-width: 80%;
+ }
+ .formBx form input,.formBx form textarea{
+     margin-bottom: 20px;
+     font-size: 16px;
+     background: rgb(238, 229, 229);
+     border: none;
+     outline: none;
+     color: rgb(63, 56, 56);
+     resize: none;
+ }
+ .formBx form textarea{
+     min-height: 200px;
+ }
+ .formBx form input[type='submit']{
+     max-width:100px;
+     background: #3716f1;
+     cursor: pointer;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 10px;
+     cursor: pointer;
+     color: white;
+ }
+ .formBx form input[type='submit']:hover{
+     background: #2A2A2A;
+     color: white;
+ }
+ .contactInfoBx{
+     position: relative;
+
+ }
+ .contactInfoBx .box{
+     position: relative;
+     padding: 20px 0;
+     display: flex;
+ }
+ .contactInfoBx .box .icon{
+     min-width: 40px;
+     padding-top: 4px;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     font-size: 24px;
+ }
+ .contactInfoBx h3{
+     color: rgb(37, 36, 36);
+ }
+ .box{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+
+ }
+ .contactInfoBx .box .text{
+     display: flex;
+     margin-left: 20px;
+     font-size: 16px;
+     color: rgb(27, 25, 25);
+     flex-direction: column;
+     font-weight: 300;
+
+     }
+     .contactInfoBx .box .text h3{
+         font-weight: 500;
+         color: #2A2A2A;
+         font-weight: 300;
+         margin-bottom: 0;
+     }
+ .contact-titre{
+     font-size: 2em;
+     color: #0e0e38;
+     font-weight: 400;
+     /* margin: 10px; */
+     text-transform: uppercase;
+     }
+     .contact-text{
+     color:#8F8F8F;
+     }
+
+ /*================FIN style contact =================== */
+ /* ================Styles login=======================  */
+ .submitLog{
+     max-width:100px;
+     background: #3c0ce9;
+     cursor: pointer;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 10px;
+     cursor: pointer;
+ }
+ .submitLog:hover{
+     background: black;
+     color: white;
+ }
+ .loginBx{
+     display: flex;
+     flex-direction: column;
+     /* background-color: rgb(21, 52, 230); */
+     min-width: 100%;
+
+ }
+ .titreLog{
+     background-color: rgba(195, 205, 240, 0.507);
+     height: 40px;
+     padding-top: 10px;
+     margin-bottom: 10px;
+     text-transform: uppercase;
+     padding-left: 10px;
+      min-width: 100%;
+
+
+ }
+ /* .titreLog >*{
+     margin-left: 80px;
+ } */
+ .cadreLog form{
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(223, 215, 215, 0.397);
+     min-width: 100%;
+
+ }
+ .cadreLog form>*{
+     padding-bottom: 20px;
+     align-self: center;
+ }
+ .cadreLog form input{
+    color: gray;
+    height: 30px;
+ }
+ /* ================FIN Styles login=======================  */
+ /* ========syle liste velos=================*/
+ .contentVelos>*{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     flex-basis: calc(100% - 20px);
+     margin-top: 20px;
+     min-width: 200px;
+     flex-grow: 1;
+     flex-shrink: 0;
+     /* background-color: #fff; */
+
+ }
+ #maps-canvas{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     max-width: 1130px;
+     margin-left: auto;
+     margin-right: auto;
+
+ }
+ .velo{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     flex-basis: calc(50% - 20px);
+     margin-top: 20px;
+     max-width: 400px;
+     flex-grow: 1;
+     flex-shrink: 0;
+     margin-right: 10px;
+    border-bottom: 2px solid blue;
+
+ }
+
+ .options button {
+     width: auto;
+     height: 20px;
+     color: white;
+     margin: 5px;
+     border: 0;
+     font-size: 16px;
+   }
+ .velo>*{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     flex-basis: calc(100% - 20px);
+     margin-top: 20px;
+     min-width: 200px;
+     flex-grow: 1;
+     flex-shrink: 0;
+     /* background-color: rgb(0, 243, 101); */
+
+ }
+ .liste_velos{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ /* ======== Fin syle liste velos=================*/
+
+ /*==    style crervelo======================*/
+ .alignInput>div {
+     display: flex;
+     flex-direction: column;
+  
+     margin-top: 10px;
+    
+ }
+ .alignInput>div>* {
+    align-self: center;
+   
+}
+ .alignInput>div input {
+    margin: 0;
+    padding:  0;
+
+
+}
+ .contentCreer{
+     display: flex;
+     flex-direction: column;
+     flex-basis: calc(100% -20px);
+     flex-wrap: wrap;
+     margin-left: 10px;
+     margin-right: 10px;
+     align-items: center;
+ }
+ .ouiNon{
+     align-self: center;
+ }
+ .createBx{
+   display: flex;
+   flex-direction: column;
+
+ }
+ .createBx >div{
+     width: 50%;
+ }
+ .closeCreate{
+     display: flex;
+     flex-direction: column;
+ }
+ .closeCreate div{
+     width:50% ;
+     align-self: center;
+ }
+ /* gerer le formulaire*/
+ .contentCreer>form>div,#close>div,#masquer>div{
+     display: flex;
+     flex-direction: column;
+     flex-basis: calc(100% -20px);
+     align-items: center;
+
+ }
+ .contentCreer p{
+     align-self: center;
+     margin: 10px;
+ }
+ .contentCreer select ,.contentCreer input[type=text],.contentCreer input[type=date]{
+     width: 100%;
+     height: 40px;
+     font-size: 18px;
+ }
+ .contentCreer textarea{
+     width: 100%;
+ }
+ .contentCreer label{
+     color: rgb(8, 1, 37);
+     margin:10px;
+
+ }
+ #masquer select{
+     margin:10px;
+     height: 30px;
+ }
+
+  /* =================Styles de la table============== */
+  table#p{
+     margin:20px 0 0 0;
+     border-collapse: collapse; /* http://www.w3schools.com/cssref/pr_border-collapse.asp*/
+     border-spacing: 0;
+     background: black url(planet.png) no-repeat top center;
+     color:aliceblue;
+     width: 100%;
+   }
+
+   table#p td, table#p th{
+     text-align:center;
+   }
+
+   table#p thead{
+     font-size: .8em;
+     line-height: 12px;
+     background: #8060f5;
+     text-transform: uppercase;
+   }
+
+   table#p thead th{
+     color:white;
+     padding: 8px;
+     vertical-align: bottom;
+   }
+
+   /* largeur de chacune des rangees 1,2,3,4*/
+   table#p thead th:nth-child(1){
+     width:25%;
+     text-align:left;
+     padding-left:20px;
+   }
+
+   table#p thead th:nth-child(2){
+     width:35%;
+   }
+
+   table#p thead th:nth-child(3){
+     width:35%;
+   }
+
+
+
+   table#p thead th:nth-child(4){
+     width:15%;
+      text-align:left;
+     padding-left:20px;
+   }
+   table#p thead th:nth-child(5){
+     width:15%;
+      text-align:left;
+     padding-left:20px;
+   }
+
+
+   table#p tbody{
+     font-size:.9em;
+     line-height: 15px;
+   }
+
+   table#p tbody tr{
+     border-top: 1px solid #8f92f8;
+   }
+
+   table#p tbody td{
+     padding: 12px;
+   }
+
+
+
+   /* emphase sur les rangees impaires*/
+   table#p tbody tr:nth-child(odd){
+     background: rgba(187, 186, 190, 0.2);
+   }
+
+   /* le hover des rangees du tableau (doit être placé après nth-child odd)*/
+   table#p tbody tr:hover{
+     background: rgba(3, 6, 177, 0.527);
+   }
+
+
+
+   /* emphase sur la premiere colonne*/
+   table#p tbody td:first-child{
+     text-align:left;
+     padding-left:20px;
+   background: #957bf3;
+   }
+   .paginate{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 20px;
+     margin-bottom: 20px;
+   }
+    /* ================= FIN Styles de la table============== */
+ /* input {
+     width: 250px;
+     height: 30px;
+     margin: 10px;
+     border: 1px solid #ccc;
+   } */
+   #images{
+    display:none;
+   }
+   /* upload image */
+ #imageVue{
+     width: 100%;
+     height: auto;
+     position: relative;
+
+   }
+   .liImage{
+    display: block;
+    height: 100px;
+    /* background-color: rgb(197, 189, 245); */
+    width: 100%;
+    position: relative;
+   padding-bottom: 30px;
+   }
+   /* .liImage button{
+
+   } */
+   .liImage img{
+
+     height: 80px;
+     width: 80px;
+     position: absolute;
+     left: 50px;
+     top:20px;
+
+
+   }
+   .televerser{
+       background-color:red;
+   }
+   .televerser:hover{
+     cursor: pointer;
+   }
+
+ #can-map{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: auto;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ /*==   fin style crervelo======================*/
+ .responsive{
+     width: 100%;
+     height: auto;
+
+ }
+ .caroussel{
+     width: 100%;
+     height: 200px;
+     background-color:rgb(46, 35, 35);
+     padding-top: 130px;
+   }
+
+   .gallery-item.gallery-item-last {
+     left: 85%;
+     transform: translateX(-50%);
+   }
+
+ /*==   FIN  style carroussel==================*/
+ /* ===============STYLES CONsiel acceuil===============*/
+ .nb{
+     border: 1px solid #00457C;
+     margin-top: 50px;
+ }
+ .info{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background-color:#00457C;
+     color:white;
+     width: 100%;
+     height: 100px;
+     text-align: center;
+
+ }
+ .conseil1,.conseil2{
+     display: flex;
+     /* background-color: rgb(241, 148, 148); */
+     flex-direction: row;
+     flex-wrap: wrap;
+     flex-grow: 1;
+     width: 100%;
+     justify-content: center;
+ }
+ .cadenas>* ,.support>*,.marqueD>* ,.endroit>*,.enreg>* ,.serie>* ,.caracteritique >* ,
+
+ .burinage>* ,.nb >p{
+    /* background-color: #fff; */
+     margin-right: 10px;
+     margin-left: 10px;
+
+     text-align: start;
+
+
+}
+.imgc,.titreS{
+    /* background-color: rgb(248, 31, 31); */
+
+    align-self: center;
+}
+.titreConseil{
+    font-size: 1em;
+    color: #0e0e38;
+    /* font-weight: 200; */
+    /* margin: 10px; */
+    text-transform: uppercase;
+}
+
+.conseil1 p ,.conseil2 p{
+    color:#8F8F8F;
+}
+.nb p{
+    color: #0e0e38 ;
+}
+
+.conseil1 h3 ,.conseil2 h3{
+    font-weight: 500;
+    color: #2A2A2A;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+ .conseil1>* {
+     display: flex;
+     flex-direction: column;
+   /* background-color: rgb(53, 199, 78);  */
+   margin: 10px;
+   flex-basis: calc(25% - 20px) ;
+/* min-width: 300px ; */
+/* border-left: 1px dashed 1px; */
+ }
+ .conseil2>*{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(53, 199, 78);  */
+    margin: 10px;
+    flex-basis: calc(25% - 20px) ;
+    /* min-width: 300px ; */
+  }
+  .langCacher{
+      display: none;
+  }
+  .langAfficher{
+    display: block;
+}
+ /* =============== FIN STYLES CONsiel acceuil===============*/
+ /*==============style pagination=============*/
+ .paginateContainer{
+
+    background-color: rgb(212, 196, 196);
+ }
+
+/* .suiv{
+    padding: 5px;
+} */
+
+  /*============== FIN style pagination=============*/
+  /*====================style register ==========================*/
+  .contentCreer{
+
+      /* border: 1px solid blue; */
+
+  }
+  .regisInfo{
+      display: flex;
+      width: calc(100% - 10px) ;
+     
+     
+  }
+  .contentCreer .connexion {
+      /* display: flex;
+      flex-direction: column; */
+      width: 100%;
+      /* background-color: rgb(216, 8, 8); */
+
+  }
+  .contentCreer .connexion>div {
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(40, 216, 33); */
+
+}
+.contentCreer .connexion>div>* {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%  ;
+    /* background-color: rgb(61, 13, 236); */
+    margin: 0;
+    padding: 0;
+    /* margin: 10px; */
+}
+.contentCreer .connexion>div input[type=password],.contentCreer .connexion>div input[type=email]{
+    /* background-color: rgb(182, 10, 10); */
+    height: 40px;
+}
+.contentCreer .connexion>div input[type=checkbox]{
+    margin-top: 10px;
+    height: 20px;
+}
+.contentCreer .connexion>div label{
+    /* background-color: rgb(145, 10, 10); */
+    align-self: center;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.btnInput{
+    margin-top: 10px;
+    height: 50px;
+    max-width: 40%;
+    min-width: 130px;
+    background-color: rgb(12, 8, 240);
+    color: white;
+    text-transform: uppercase;
+}
+.btnInput:hover{
+    background-color: rgb(6, 7, 26);
+    cursor: pointer;
+}
+
+/*====================FIN style register ==========================*/
+
+ @media only screen and (min-width:1080px) and (max-width:3000px) {
+     .contentCreer{
+         flex-basis: calc(100% -20px);
+        /* min-width: 1080px; */
+
+     }
+ .nav-bottom #menu-2{
+ clear:none ;
+ float: right;
+ max-height: none;
+
+ }
+ .velo{
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+
+ .velo>*{
+
+     flex-basis: calc(40% - 20px);
+     width: 400px;
+
+ }
+ .nav-bottom{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+ .nav-bottom #menu-2{
+    display: flex;
+    flex-direction: row;
+    height: 70px ;
+
+ }
+ .nav-bottom .menu-icon{
+     display: none;
+ }
+ }
+ /*** ecran petit p************************************/
+ @media screen and (max-width:768px) {
+    .conseil1>*{
+
+        flex-basis: calc(100% - 20px) ;
+        min-height: 200px;
+     /* min-width: 300px ; */
+      }
+      .conseil2>*{
+
+         flex-basis: calc(100% - 20px) ;
+         /* min-width: 300px ; */
+         min-height: 200px;
+       }
+      .createBx >div{
+         width: 100%;
+     }
+      .createBx div>label,.createBx div>input ,.createBx div>textarea{
+         width: 100%;
+     }
+      .closeCreate div{
+         min-width:calc(100% - 40px) ;
+         align-self: center;
+     }
+     /* .editForm >div{
+         min-width: 70%;
+     } */
+     .editForm>div{
+         align-self: center;
+         width: 100%;
+     }
+
+
+     .cadreLog form input{
+         color: gray;
+         height: 30px;
+      }
+
+      .formBx form input{
+         min-height: 30px;
+
+     }
+     .formBx form input,.formBx form textarea{
+         margin-bottom: 20px;
+         font-size: 12px;
+     }
+
+     .content{
+         display: flex;
+         flex-direction: column;
+
+     }
+     #nav-top{
+         position: relative;
+     }
+     .mc-grand{
+     display: block;
+ }
+     .recherch{
+          position: absolute;
+         right: 0px;
+         top: 0;
+         max-width: 70%;
+         flex-basis: calc(100% - 40px);
+
+
+     }
+     .recherch>input{
+         max-width: 70%;
+     }
+     .contentCreer textarea{
+         width: calc(80% - 40px);
+     }
+     .contentCreer select ,.contentCreer input[type=text],.contentCreer input[type=date]{
+          width: calc(100% - 10px);
+         height: 30px;
+         font-size: 16px;
+     }
+
+     .mg-ecran{
+         display: none;
+     }
+     .m-mobile{
+         display: block;
+
+     }
+     .mc{
+         display: block;
+     }
+     .masque{
+         display: none;
+     }
+     .velo>*{
+         flex-basis: calc(100% - 20px);
+
+        flex-shrink: 0;
+     }
+     .velo{
+         flex-basis: calc(100% - 20px);
+
+         flex-grow: 1;
+         flex-shrink: 0;
+     }
+     .nav-bottom {
+         background: transparent;
+         /* background-color: rgba(255, 255, 255, 0.185); */
+         border-bottom: 2px solid red;
+        position: absolute;
+        top: 0;
+    }
+    .gallery {
+     width: 100%;
+     background-color: rgba(250, 14, 14, 0.733);
+   }
+
+   .gallery-container {
+
+     height: 200px;
+     /* max-width: 500px; */
+
+   }
+
+   .gallery-item {
+     height: 5px;
+     width: 5px;
+
+   }
+
+ .gallery-item.gallery-item-selected {
+     height: 150px;
+     width: 150px;
+   }
+
+
+   .gallery-item.gallery-item-previous,
+   .gallery-item.gallery-item-next {
+     height: 100px;
+     width: 100px;
+
+   }
+ }
+
+ @media  only screen and (min-width:768px) and (max-width: 1080px) {
+    .conseil1>*{
+
+        flex-basis: calc(50% - 20px) ;
+     /* min-width: 300px ; */
+      }
+      .conseil2>*{
+
+         flex-basis: calc(50% - 20px) ;
+         /* min-width: 300px ; */
+       }
+       
+      .contentCreer select ,.contentCreer input[type=text],.contentCreer input[type=date]{
+         min-width: calc(100% - 10px);
+         height: 40px;
+         font-size: 16px;
+     }
+     .contentCreer textarea{
+         min-width: 100%;
+
+     }
+
+     .contentCreer{
+         display: flex;
+         flex-direction: column;
+         min-width:100%;
+         padding: 0;
+
+     }
+    
+     .contentCreer textarea{
+         min-width: 80%;
+
+     }
+     .nav-bottom {
+          background: transparent;
+          /* background-color: rgba(255, 255, 255, 0.185); */
+          border-bottom: 2px solid red;
+         position: absolute;
+         top: 0;
+
+     }
+     .nav-bottom  #menu-2{
+         margin-top: 0;
+         padding-top: 0;
+     }
+     .velo>*{
+         flex-basis: calc(100% - 20px);
+        flex-grow: 1;
+         justify-content: space-between;
+
+
+     }
+     .velo{
+         flex-basis: calc(50% - 20px);
+         width: 100%;
+         flex-grow: 1;
+         margin-right: 10px;
+         border-bottom: 2px solid blue;
+
+
+     }
+     .mg-ecran{
+        /* background-color: #fff; */
+         z-index: 20000;
+         height: 35px;
+     }
+     }

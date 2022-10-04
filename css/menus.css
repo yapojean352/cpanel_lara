@@ -1,0 +1,119 @@
+/* ======== style general==============*/
+body {
+    margin-top: 10px;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color:black ;
+}
+/* =========== nav menu================  */
+#nav{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px 0 rgba(0,0 ,0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+}
+a{
+    color: rgb(22, 10, 10);
+}
+#nav #menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: aqua;
+}
+#nav #menu a{
+    display: block;
+    outline: 1px solid red;
+    padding: 20px;
+    border-right:1px solid rgb(24, 1, 1);
+    text-decoration: none;
+}
+#nav #menu a:hover{
+background-color: tomato;
+}
+
+/* ======logo=========*/
+#nav .logo{
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+#nav #menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+} 
+#nav .menu-icon{
+    padding :28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+#nav .menu-icon .navicon{
+   background-color: rgb(3, 3, 14);
+   display: block;
+   height: 3px;
+   width: 18px;
+   position: relative;
+   transition: background .2s ease-out;
+   
+}
+#nav .menu-icon .navicon:before{
+ background-color: black;
+ content: "";
+ display: block;
+ height: 100%;
+ width:100% ;
+ position: absolute;
+ top :5px;
+ transition: all .2s ease-out;
+}
+#nav .menu-icon .navicon:after{
+    background-color: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width:100% ;
+    position: absolute;
+    transition: all .2s ease-out;
+    top :-5px;
+   }
+/*============ click checbox burger menu =====================*/
+#nav .menu-btn{
+    display:none;
+}
+#nav .menu-btn:checked ~ #menu{
+    max-height: 600px;
+}
+#nav .menu-btn:checked ~ .menu-icon .navicon{
+    background: transparent;
+}
+#nav .menu-btn:checked ~ .menu-icon .navicon:before{
+    transform: rotate(-45deg);
+    top:0;
+}
+#nav .menu-btn:checked ~ .menu-icon .navicon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+@media(min-width:48em){
+#nav li {
+   float: left; 
+}
+#nav li a{
+    padding: 20px 30px;
+}
+
+#nav #menu{
+clear:none ;
+float: right;
+max-height: none;
+} 
+#nav .menu-icon{
+    display: none;
+}
+}

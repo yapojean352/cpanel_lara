@@ -1,0 +1,187 @@
+/* ======== style general==============*/
+body {
+    margin-top: 10px;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+/* =========== nav menu================  */
+.nav-bottom{
+    box-shadow: 1px 1px 4px 0 rgba(0,0 ,0, .1);
+    position: fixed;
+    width: 100%;
+     overflow: hidden;
+    z-index: 5;
+    height:auto;
+    background-color: #4d5550;
+
+}
+/* .recherche{
+    position: absolute;
+    top: 0px;
+    right: 250px;
+   
+} */
+/* .btnR{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(74, 85, 247);
+    border-radius: 8px;
+}
+.input-recherche{
+    height: 30px;
+   
+}
+.formR{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.infosLan{
+     background-color: rgb(8, 0, 0);
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     display:flex ;
+     flex-direction: row;
+     justify-content: space-between; 
+     width: auto;
+     height: 40px;
+}
+.log{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* .log li{
+margin-right: 10px;
+margin-left: 10px;
+} */
+/*.infosLan span{
+     margin-right: 20px; 
+    display: block;
+}
+.infosLan  a{
+ color: white;
+ text-decoration: none;
+}
+a{
+    color: rgb(255, 255, 255);
+} */
+.nav-bottom #menu-2{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color:#01070c;
+    margin-top: 50px;
+    
+}
+.nav-bottom #menu-2 a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-bottom:1px solid red ;
+}
+.nav-bottom #menu-2 a:hover{
+    border-bottom: 5px solid blue;
+    display: block;
+    text-decoration: none;
+}
+
+/* ======logo=========*/
+/* #nav .logo{
+    position: absolute;
+    left:0;
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+   
+} */
+.nav-bottom #menu-2{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+} 
+.nav-bottom .menu-icon{
+    padding :50px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.nav-bottom  .menu-icon .navicon{
+   background-color: rgb(246, 246, 250);
+   display: block;
+   height: 3px;
+   width: 18px;
+   position: relative;
+   transition: background .2s ease-out;
+   
+}
+.nav-bottom  .menu-icon .navicon:before{
+ background-color:rgb(246, 246, 250);
+ content: "";
+ display: block;
+ height: 100%;
+ width:100% ;
+ position: absolute;
+ top :5px;
+ transition: all .2s ease-out;
+}
+.nav-bottom  .menu-icon .navicon:after{
+    background-color: rgb(246, 246, 250);
+    content: "";
+    display: block;
+    height: 100%;
+    width:100% ;
+    position: absolute;
+    transition: all .2s ease-out;
+    top :-5px;
+   }
+/*============ click checbox burger menu =====================*/
+.nav-bottom  .menu-btn{
+    display:none;
+}
+.nav-bottom .menu-btn:checked ~ #menu-2 {
+    max-height: 600px;
+
+}
+.nav-bottom .menu-btn:checked ~ .menu-icon .navicon{
+    background: transparent;
+}
+.nav-bottom .menu-btn:checked ~ .menu-icon .navicon:before{
+    transform: rotate(-45deg);
+    top:0;
+}
+.nav-bottom .menu-btn:checked ~ .menu-icon .navicon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+ @media only screen and (min-width:1080px) and (max-width:3000px) {
+   
+    .nav-bottom #menu-2{
+clear:none ;
+float: right;
+max-height: none;
+
+} 
+.nav-bottom .menu-icon{
+    display: none;
+}
+}
+
+ /*** ecran petit p************************************/
+
+/* @media screen and (max-width: 1080px) {
+    .infosLan{
+        display: none;
+    }
+    #nav #menu a:hover{
+        border-bottom: 5px solid blue;
+        display: block;
+        text-decoration: none;
+
+    }
+   
+ } */
